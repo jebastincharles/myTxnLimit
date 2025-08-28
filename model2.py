@@ -22,15 +22,15 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # -------------------------
-# Config / Seed
+# Config / Seedou
 # -------------------------
 SEED = 42
 np.random.seed(SEED)
 random.seed(SEED)
 
-# Size / performance knobs
+# Size / performance knobsiiscan ypu send me full log
 N_CUSTOMERS = 1000                # reduce if you want faster runs
-AVG_TXNS_PER_CUSTOMER = 60       # average transactions per customer
+AVG_TXNS_PER_CUSTOMER = 6000       # average transactions per customer
 START_DATE = datetime(2024, 1, 1)
 END_DATE = datetime(2024, 12, 31)
 
@@ -285,7 +285,7 @@ xgb_preds = evaluate_model(xgb, X_test, y_test, "XGBoost")
 nn_preds = evaluate_model(nn, X_test_scaled, y_test, "NeuralNet (scaled)")
 
 # -------------------------
-# 10) Feature importance + save
+# 10) Feature importance + savewe
 # -------------------------
 feature_names = X.columns.tolist()
 
